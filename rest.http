@@ -1,0 +1,28 @@
+POST http://localhost:3000/transactions
+Content-Type: application/json
+
+{
+    "name":"House Rent",
+    "type":"expense",
+    "amount":20000,
+    "date":"29-10-2024",
+    "description":"monthly house rent"
+}
+
+###
+GET http://localhost:3000/transactions
+
+###
+GET http://localhost:3000/transactions/1
+###
+PUT http://localhost:3000/transactions/1
+Content-Type: application/json
+
+{
+    "description":"fee for doctor"
+}
+###
+DELETE http://localhost:3000/transactions/3
+
+###
+GET http://localhost:3000/summary
